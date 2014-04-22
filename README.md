@@ -1,4 +1,4 @@
-# Preface
+# Introduction
 
 This book provides a guide to professional software engineering. It is intended as a guide for complete beginners with
 little to no programming experience. It presents a lightning tour of all of the basics that you need to know in order
@@ -86,3 +86,24 @@ line shows the result that you should get from the console:
     2
 
 You now have everything you need to begin!
+
+----
+
+Throughout the book we will include some exercises in boxes like this. In the interactive web version of the book, you
+can type in Javascript expressions to solve the exercises and check them by clicking the Submit button. In print
+versions you may solve the exercises on your own and refer to the answers given. As an example, type in the Javascript
+code for calculating 1 + 1:
+
+```js
+var x = 1 +
+```
+
+```js
+var x = 1 + 1
+```
+
+```js
+assert(x === 2)
+```
+
+----
