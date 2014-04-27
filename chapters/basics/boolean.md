@@ -14,7 +14,7 @@ In addition to the two values, `true` and `false` there are also a number of ope
 together. The *AND* operator (written `&&` in JavaScript) returns `true` if both its arguments are true, otherwise it
 returns false. The *OR* operator (written `||`) returns `true` if either (or both) of its arguments are true. The
 *NOT* operator (written `!`) returns `true` if its argument is `false`, otherwise returning `false`. Here are some
-examples in JavaScript:
+examples in Javascript:
 
     > true && false
     false
@@ -48,40 +48,91 @@ operators in a combined truth table:
 | `true`  | `false` | `false` | `true`  |
 | `true`  | `true`  | `true`  | `true`  |
 
-----
+
+---
 
 Given the truth tables above, what would you expect the result of the following Boolean expressions to be?
 
-`true && false`
-- [X] `false`
+What is the result of `true && false`?
+- [x] `false`
 - [ ] `true`
 
 > The `&&` (AND) operator requires both arguments to be true.
 
-`true && !false`
+What is the result of `true && !false`?
 - [ ] `false`
-- [X] `true`
+- [x] `true`
 
 > `!false` is equal to `true` so both arguments are true.
 
-----
+What is the result of `false || (true && !true)`?
 
-### Other operators
+- [x] `false`
+- [ ] `true`
 
-Note that `A || B` is true even if *both* A and B are true. This is known as inclusive-or, as is what is meant by 'or'
+> `!true` is `false` so `true && !true` must be false according to the truth table for `&&`. Both sides of the OR are then false.
+
+---
+
+### Operator precedence
+
+In the examples so far we have used parentheses (round brackets) to surround sub-expressions. For example, in the last
+question above we wrote `false || (true && !true)`. We could also have written it without the parentheses, as just
+`false || true && !true`. The reason that these two are equivalent is that Javascript (and most programming languages)
+use a concept called *operator precedence* to decide what order to evaluate sub-expressions when we don't use explicit
+parentheses. For Boolean expressions, the order of precedence is that `!` has the highest precedence, followed by `&&`
+and then by `||`. So an expression like `false || true && !true` will be treated as `false || (true && (!true))`,
+while `true && !false || true` becomes `(true && (!false)) || true`. Notice how the `!` expressions are always in the
+inner-most set of parentheses, indicating that they will be evaluated first, followed by any `&&` conditions, and
+finally, any `||` conditions. These rules are usually what you expect. However, if you are in any doubt then you can
+always add extra parentheses to make the order clear. Later, we will see that operator precedence applies to other
+operators in Javascript, such as arithmetic. In most cases, the precedence follows standard mathematical practice.
+
+It is important to be aware that spacing of operators and other visual clues that humans use to decide on precedence
+mean nothing to the Javascript language. For example, the expressions `a && b||c` and `a&&b || c` are identical -- they
+both mean the same as `(a && b) || c`.
+
+
+---
+
+Using the rules for operator precedence, how are the following expressions interpreted in Javascript?
+
+`a && b || c`
+
+- [x] `(a && b) || c`
+- [ ] `a && (b || c)`
+
+> Remember that AND (`&&`) has higher precedence than OR.
+
+`!a || b && c`
+
+- [ ] `!(a || (b && c))`
+- [x] `(!a) || (b && c)`
+- [ ] `((!a) || b) && c)`
+
+> `!a` and `b && c` both have higher precedence than the `||` operator so will be evaluated first. As they occur in
+different sub-expressions we do not need any further parentheses.
+
+---
+
+### Other Boolean operators
+
+Note that `A || B` is true even if *both* A and B are true. This is known as inclusive-or, and is what is meant by 'or'
 in programming. In everyday language, 'or' often means 'either one or the other (but not both)'. In programming, this
-concept is known as *exclusive or* or *XOR*. There is no built-in operator for XOR in JavaScript, but you can build it
+concept is known as *exclusive or* or *XOR*. There is no built-in operator for XOR in Javascript, but you can build it
 from the other operators.
 
-Exercise: Write out the truth table for XOR. What combination of operators can be used to implement it?
+*Exercise:* Write out the truth table for XOR. What combination of operators can be used to implement it?
 
 There are a handful of other operators that are commonly used in logic, but less common in programming. Implication,
-written `A => B` (in logic, but not JavaScript) means that B must be true whenever A is true. (When A is not true, B
+written `A => B` (in logic, but not Javascript) means that B must be true whenever A is true. (When A is not true, B
 can be either true or false). It is equivalent to the expression `!A || B` - either A is not true or B must be true.
 
 A final operator (again, present in logic but not in most programming languages) is logical equivalence, written
 `A <=> B`. This says that A is true if and only if B is true. It is equivalent to two implications: `A => B && B => A`.
 You might recognise that this is the exact opposite of the XOR operator.
+
+*Exercise:* Write out the truth tables for `=>` and `<=>`.
 
 All of these operators together form the entirety of Boolean logic (also known as propositional logic). We won't go
 much more into the formal definitions of logic here as there are plenty of good introductions available on the web.
@@ -89,10 +140,11 @@ However, an interesting point is that we can define all of the operators in term
 For instance, OR itself can be defined as `!(!A && !B)`. If we take this a little further then we can come up with the
 combined operators NAND and NOR: NAND is formed by applying NOT to the result of an AND, while NOR is formed by doing
 the same to OR. We can then pick either of these two operators and implement the whole of the rest of Boolean logic
-from that one building block. This is useful when designing microchips as an entire processor can be built from a single
-simple building block.
+from that one building block. Microprocessor design often uses this trick as a NAND or NOR operation is easy to
+implement using just a handful of transistors, and then the rest of the processor can be built using this one simple
+building block. For example, NOT(a) can be implemented simply as NAND(a, a). OR(a, b) can then be implemented as
+NAND(NOT(a), NOT(b)). And so on.
 
-### Booleans in Programming
+*Exercise:* Write out the truth tables for NAND and NOR. Pick one and implement all of the other operators using it.
 
-Boolean values are extremely widely used in programming to allow *conditional* code that executes when some Boolean
-condition is true. The basis for this is the *if-then-else* statement
+In the next chapter we will see how we can build numbers and other data types from simple Boolean operations.

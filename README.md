@@ -78,7 +78,7 @@ like this:
 
 ![Google Chrome JavaScript Console](images/jsconsole.png "Google Chrome JavaScript Console")
 
-You can type JavaScript expressions directly into the console and press Return to see the results interactively. We will
+You can type Javascript expressions directly into the console and press Return to see the results interactively. We will
 show interactive examples in a box like the following. The code after the > character is what you type in, and the next
 line shows the result that you should get from the console:
 
