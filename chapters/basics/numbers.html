@@ -39,7 +39,7 @@
         <link rel="stylesheet" href="../../gitbook/style.css">
         
         
-    <div class="book" data-github="NeilMadden/IntroToSoftwareEngineering" data-level="2.2" data-basepath="../.." data-revision="1398599629053">
+    <div class="book" data-github="NeilMadden/IntroToSoftwareEngineering" data-level="2.2" data-basepath="../.." data-revision="1398611945748">
     <div class="book-header">
     <!-- Actions Left -->
     
@@ -684,6 +684,140 @@
 </div>
 
                 <div class="page-inner">
+                
+                    <section class="normal" id="section-gitbook_18">
+                    
+                        <h2 id="numbers-and-arithmetic">Numbers and Arithmetic</h2>
+<p>Beyond Boolean values, the next most basic type of values present in most languages are numbers. Most languages
+distinguish between at least two types of numbers: whole numbers, or <em>integers</em>, and fractional numbers, known as
+<em>floating-point numbers</em>, which are roughly equivalent to decimal numbers such as 3.14159. Some languages also provide
+other types of numbers such as <em>rational</em> numbers (proper fractions), <em>complex</em> numbers and so forth. For now we will
+concentrate on just integers and floating point (or &#39;floats&#39; as they are sometimes called). Some examples of integers
+include:</p>
+<pre><code class="lang-js"><span class="hljs-number">42</span>
+-<span class="hljs-number">55</span>
+<span class="hljs-number">0</span>
+</code></pre>
+<p>Javascript includes a variety of basic arithmetic operators for working with integers, allowing Javascript to be used as
+a calculator (note: <code>*</code> means multiplication):</p>
+<pre><code class="lang-js"><span class="hljs-number">3</span> + <span class="hljs-number">4</span> <span class="hljs-comment">// = 7</span>
+<span class="hljs-number">3</span> * <span class="hljs-number">4</span> <span class="hljs-comment">// = 12</span>
+<span class="hljs-number">12</span> / <span class="hljs-number">4</span> <span class="hljs-comment">// = 3</span>
+</code></pre>
+<p>Just like with Boolean expressions, you can combine multiple operators together into more complicated expressions:</p>
+<pre><code class="lang-js">(<span class="hljs-number">3</span> * <span class="hljs-number">4</span>) / <span class="hljs-number">2</span> <span class="hljs-comment">// 6</span>
+<span class="hljs-number">3</span> * <span class="hljs-number">4</span> / <span class="hljs-number">2</span>   <span class="hljs-comment">// 6</span>
+</code></pre>
+<p>As before, the operators have different precedence levels, which obey the usual rules of arithmetic. For example the
+<code>*</code> operator (multiplication) has higher precedence than <code>+</code> (addition):</p>
+<pre><code class="lang-js"><span class="hljs-number">3</span> + <span class="hljs-number">4</span> * <span class="hljs-number">5</span>   <span class="hljs-comment">// = 23</span>
+<span class="hljs-number">3</span> + (<span class="hljs-number">4</span> * <span class="hljs-number">5</span>) <span class="hljs-comment">// = 23</span>
+(<span class="hljs-number">3</span> + <span class="hljs-number">4</span>) * <span class="hljs-number">5</span> <span class="hljs-comment">// = 35</span>
+</code></pre>
+<p>The arithmetic operators in Javascript, in order of precedence, are as follows:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">Operator</th>
+<th style="text-align:left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><code>+</code>, <code>-</code></td>
+<td style="text-align:left"><em>Unary</em> plus and negation, e.g., <code>-5</code></td>
+</tr>
+<tr>
+<td style="text-align:center"><code>*</code>, <code>/</code>, <code>%</code></td>
+<td style="text-align:left">Multiplication, division and modulus (remainder after division).</td>
+</tr>
+<tr>
+<td style="text-align:center"><code>+</code>, <code>-</code></td>
+<td style="text-align:left">Addition and subtraction.</td>
+</tr>
+</tbody>
+</table>
+<p>The <em>unary</em> operators are different from the normal addition and subtraction operators. They are used by placing the
+operator directly in front of another expression. The unary <code>+</code> operator is essentially useless and never used. The
+unary <code>-</code> operator is frequently used to negate the result of another expression:</p>
+<pre><code class="lang-js"><span class="hljs-number">3</span> + <span class="hljs-number">5</span>       <span class="hljs-comment">// = 8</span>
+-(<span class="hljs-number">3</span> = <span class="hljs-number">5</span>)    <span class="hljs-comment">// = -8</span>
+-<span class="hljs-number">3</span> + <span class="hljs-number">5</span>      <span class="hljs-comment">// = 2</span>
+</code></pre>
+<p>Because unary <code>-</code> has higher precedence, the last expression is interpreted as <code>(-3) + 5</code>.</p>
+<p>One operator you may not be familiar with is the <code>%</code> operator, known as <em>modulus</em>. This operator returns the remainder
+after division by an integer. For example, the remainder after dividing 4 by 3 is 1:</p>
+<pre><code class="lang-js"><span class="hljs-number">4</span> % <span class="hljs-number">3</span> <span class="hljs-comment">// = 1</span>
+</code></pre>
+<p>One common use for the modulus operator is to check if one number is exactly divisible by another one. For example, we
+can check if a number is even by checking if it is exactly divisible by two:</p>
+<pre><code class="lang-js"><span class="hljs-number">4</span> % <span class="hljs-number">2</span> <span class="hljs-comment">// = 0</span>
+<span class="hljs-number">5</span> % <span class="hljs-number">2</span> <span class="hljs-comment">// = 1</span>
+</code></pre>
+<h3 id="equality-and-comparisons">Equality and Comparisons</h3>
+<p>We can compare numbers to each other using a number of <em>comparison</em> operators. These operators take two numbers and
+return a Boolean indicating whether the comparison was true or false. For example, the equality operator, written
+<code>===</code> takes two numbers (or other values) and returns true if they are equal:</p>
+<pre><code class="lang-js"><span class="hljs-number">2</span> === <span class="hljs-number">3</span> <span class="hljs-comment">// false</span>
+<span class="hljs-number">3</span> === <span class="hljs-number">3</span> <span class="hljs-comment">// false</span>
+</code></pre>
+<p>The basic comparison operators offered by Javascript are the following:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">Operator</th>
+<th style="text-align:left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><code>===</code></td>
+<td style="text-align:left">Equality</td>
+</tr>
+<tr>
+<td style="text-align:center"><code>!==</code></td>
+<td style="text-align:left">Inequality</td>
+</tr>
+<tr>
+<td style="text-align:center"><code>&lt;</code></td>
+<td style="text-align:left">Less-than</td>
+</tr>
+<tr>
+<td style="text-align:center"><code>&lt;=</code></td>
+<td style="text-align:left">Less-than or equals</td>
+</tr>
+<tr>
+<td style="text-align:center"><code>&gt;</code></td>
+<td style="text-align:left">Greater-than</td>
+</tr>
+<tr>
+<td style="text-align:center"><code>&gt;=</code></td>
+<td style="text-align:left">Greater-than or equals</td>
+</tr>
+</tbody>
+</table>
+<p>There are also the <code>==</code> and <code>!=</code> operators, which are much like the normal equality operators but they additionally
+attempt to convert their arguments to be of the same type before comparing them. For example:</p>
+<pre><code class="lang-js"><span class="hljs-number">1</span> === <span class="hljs-literal">true</span> <span class="hljs-comment">// false</span>
+<span class="hljs-number">1</span> == <span class="hljs-literal">true</span>  <span class="hljs-comment">// true</span>
+</code></pre>
+<p>The first example using the normal equality operator evaluates to <code>false</code> because <code>1</code> and <code>true</code> are different types of
+values (one is a number, the other a Boolean). The <code>==</code> operator instead tries to be helpful by first converting the
+<code>1</code> into a Boolean <code>true</code> value. While this behaviour may at first appear to be helpful, it is usually not! Many bugs
+have been caused by &quot;helpful&quot; conversions between types producing unexpected results. It is better to use the strict
+comparison operators and perform explicit conversions between types when you need to.</p>
+<p>In terms of precedence, all of the comparison operators have lower precedence than the arithmetic operators, and the
+equality and inequality operators have slightly lower precedence than the other comparisons. For example, the
+expression <code>1 + 1 &gt;= 2</code> is interpreted as <code>(1 + 1) &gt;= 2</code> and evaluates to <code>true</code>, rather than <code>1 + (1 &gt;= 2)</code> which
+doesn&#39;t make much sense (although Javascript will again try and be &quot;helpful&quot; here, evaluating it to <code>1</code> by converting
+the <code>false</code> to a <code>0</code>).</p>
+<h3 id="binary-numbers">Binary Numbers</h3>
+<p>We mentioned in the section on Boolean values that all other types of values can be created from simple Booleans. In the
+case of integers this is done using <em>binary numbers</em>. Our everyday numbers are written in decimal form, where each digit
+position in the number is ten times greater than the digit to the right of it.</p>
+
+                    
+                    </section>
                 
                 </div>
             </div>

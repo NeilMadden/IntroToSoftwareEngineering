@@ -39,7 +39,7 @@
         <link rel="stylesheet" href="../../gitbook/style.css">
         
         
-    <div class="book" data-github="NeilMadden/IntroToSoftwareEngineering" data-level="2" data-basepath="../.." data-revision="1398599629053">
+    <div class="book" data-github="NeilMadden/IntroToSoftwareEngineering" data-level="2" data-basepath="../.." data-revision="1398611945748">
     <div class="book-header">
     <!-- Actions Left -->
     
@@ -685,19 +685,43 @@
 
                 <div class="page-inner">
                 
-                    <section class="normal" id="section-gitbook_15">
+                    <section class="normal" id="section-gitbook_17">
                     
                         <h1 id="fundamentals">Fundamentals</h1>
-<p>In this chapter we will learn the fundamentals of programming, using JavaScript as our programming language. JavaScript
+<p>In this chapter we will learn the fundamentals of programming, using Javascript as our programming language. Javascript
 is chosen because it is a relatively simple language (mostly) and because you almost certainly already have a
 development environment for it: your web browser. See <a href="../../#getting-started">Getting Started</a> for how to set
 up your web browser.</p>
-<p>The basic elements of any programming language consist of <em>values</em> of different <em>types</em> and <em>expressions</em> involving
+<p>The basic elements of any programming language consist of <em>values</em> of different <em>types</em>, and <em>expressions</em> involving
 those values that compute a result. Computing a result is known as <em>evaluating</em> an expression, and is the essence of
 what computing is. For example, the expression <code>1 + 1</code> evaluates to the value <code>2</code> which is a number. Other types of
 values include Boolean (true/false) values, strings of text, and more complex types and structures. Later, we will also
 consider <em>statements</em> that allow our programs to perform actions and interact with the outside world. For instance, the
-statement <code>alert(&#39;Hello!&#39;);</code> pops up a message box with the given message.</p>
+statement <code>alert(&#39;Hello!&#39;);</code> pops up a box with the given message.</p>
+<h2 id="comments">Comments</h2>
+<p>Most programming languages include some mechanisms for adding <em>comments</em> to the program text. These are blocks of text
+that are completely ignored by the computer and can be used to write helpful notes to explain to other programmers
+(and yourself) what the program is doing or other useful information. In Javascript comments can be written in one of
+two ways. A <em>single line comment</em> starts with a <code>//</code> and continues until the end of the current line. For example:</p>
+<pre><code class="lang-js"><span class="hljs-comment">// This is a single line comment</span>
+This is not a comment
+<span class="hljs-number">1</span> + <span class="hljs-number">1</span> <span class="hljs-comment">// A comment after an expression</span>
+</code></pre>
+<p>The other form of comment is a <em>block comment</em> that can include multiple lines. A block comments starts with <code>/*</code> and
+ends with a <code>*/</code>:</p>
+<pre><code class="lang-js"><span class="hljs-comment">/*
+This is a multiple
+line comment.
+*/</span>
+</code></pre>
+<p>A common convention when using block comments is to start each line of the comment with a <code>*</code> character lined up with
+the start and end asterisks:</p>
+<pre><code class="lang-js"><span class="hljs-comment">/*
+ * This is a neat comment.
+ */</span>
+</code></pre>
+<p>There is nothing special about this format, but it is commonly used and some corporate coding guidelines may prefer
+comments to be written in this style.</p>
 
                     
                     </section>

@@ -39,7 +39,7 @@
         <link rel="stylesheet" href="../../gitbook/style.css">
         
         
-    <div class="book" data-github="NeilMadden/IntroToSoftwareEngineering" data-level="2.1" data-basepath="../.." data-revision="1398599629053">
+    <div class="book" data-github="NeilMadden/IntroToSoftwareEngineering" data-level="2.1" data-basepath="../.." data-revision="1398611945748">
     <div class="book-header">
     <!-- Actions Left -->
     
@@ -701,7 +701,7 @@ know the fundamentals on which computing is built.</p>
 together. The <em>AND</em> operator (written <code>&amp;&amp;</code> in JavaScript) returns <code>true</code> if both its arguments are true, otherwise it
 returns false. The <em>OR</em> operator (written <code>||</code>) returns <code>true</code> if either (or both) of its arguments are true. The
 <em>NOT</em> operator (written <code>!</code>) returns <code>true</code> if its argument is <code>false</code>, otherwise returning <code>false</code>. Here are some
-examples in JavaScript:</p>
+examples in Javascript:</p>
 <pre><code>&gt; true &amp;&amp; false
 false
 &gt; true &amp;&amp; true
@@ -773,48 +773,291 @@ operators in a combined truth table:</p>
 </tr>
 </tbody>
 </table>
-<hr>
-<p>Given the truth tables above, what would you expect the result of the following Boolean expressions to be?</p>
-<p><code>true &amp;&amp; false</code></p>
+
+                    
+                    </section>
+                
+                    <section class="quiz" id="section-gitbook_10">
+                    
+                        <div class="header">
+    <h2>Quiz</h2>
+</div>
+
+<div class="message">
+    <p>Given the truth tables above, what would you expect the result of the following Boolean expressions to be?</p>
+
+</div>
+
+
+
+<div class="question">
+    <div class="question-header">Question 1 of 3</div>
+
+    <div class="question-content">
+        <div class="alert alert-success hidden">
+            <b>Correct!</b>
+        </div>
+
+        <div class="alert alert-danger error-message hidden">
+            <p><b>Not quite!</b></p>
+            <p>The <code>&amp;&amp;</code> (AND) operator requires both arguments to be true.</p>
+
+        </div>
+
+        <div class="question-inner">
+        <p>What is the result of <code>true &amp;&amp; false</code>?</p>
 <ul>
-<li>[X] <code>false</code></li>
-<li><input name='quiz-row-3-8' type='checkbox'/> <code>true</code></li>
+<li><input name='quiz-row-4-0' type='checkbox'/> <code>false</code></li>
+<li><input name='quiz-row-4-0' type='checkbox'/> <code>true</code></li>
 </ul>
-<blockquote>
-<p>The <code>&amp;&amp;</code> (AND) operator requires both arguments to be true.</p>
-</blockquote>
-<p><code>true &amp;&amp; !false</code></p>
+
+        </div>
+    </div>
+
+    <div class="hidden question-answers">
+        <div class="question-inner">
+        <p>What is the result of <code>true &amp;&amp; false</code>?</p>
 <ul>
-<li><input name='quiz-row-3-8' type='checkbox'/> <code>false</code></li>
-<li>[X] <code>true</code></li>
+<li><input name='quiz-row-5-0' type='checkbox' checked/> <code>false</code></li>
+<li><input name='quiz-row-5-0' type='checkbox'/> <code>true</code></li>
 </ul>
-<blockquote>
-<p><code>!false</code> is equal to <code>true</code> so both arguments are true.</p>
-</blockquote>
-<hr>
-<h3 id="other-operators">Other operators</h3>
-<p>Note that <code>A || B</code> is true even if <em>both</em> A and B are true. This is known as inclusive-or, as is what is meant by &#39;or&#39;
+
+        </div>
+    </div>
+</div>
+
+<div class="question">
+    <div class="question-header">Question 2 of 3</div>
+
+    <div class="question-content">
+        <div class="alert alert-success hidden">
+            <b>Correct!</b>
+        </div>
+
+        <div class="alert alert-danger error-message hidden">
+            <p><b>Not quite!</b></p>
+            <p><code>!false</code> is equal to <code>true</code> so both arguments are true.</p>
+
+        </div>
+
+        <div class="question-inner">
+        <p>What is the result of <code>true &amp;&amp; !false</code>?</p>
+<ul>
+<li><input name='quiz-row-7-0' type='checkbox'/> <code>false</code></li>
+<li><input name='quiz-row-7-0' type='checkbox'/> <code>true</code></li>
+</ul>
+
+        </div>
+    </div>
+
+    <div class="hidden question-answers">
+        <div class="question-inner">
+        <p>What is the result of <code>true &amp;&amp; !false</code>?</p>
+<ul>
+<li><input name='quiz-row-8-0' type='checkbox'/> <code>false</code></li>
+<li><input name='quiz-row-8-0' type='checkbox' checked/> <code>true</code></li>
+</ul>
+
+        </div>
+    </div>
+</div>
+
+<div class="question">
+    <div class="question-header">Question 3 of 3</div>
+
+    <div class="question-content">
+        <div class="alert alert-success hidden">
+            <b>Correct!</b>
+        </div>
+
+        <div class="alert alert-danger error-message hidden">
+            <p><b>Not quite!</b></p>
+            <p><code>!true</code> is <code>false</code> so <code>true &amp;&amp; !true</code> must be false according to the truth table for <code>&amp;&amp;</code>. Both sides of the OR are then false.</p>
+
+        </div>
+
+        <div class="question-inner">
+        <p>What is the result of <code>false || (true &amp;&amp; !true)</code>?</p>
+<ul>
+<li><input name='quiz-row-10-0' type='checkbox'/> <code>false</code></li>
+<li><input name='quiz-row-10-0' type='checkbox'/> <code>true</code></li>
+</ul>
+
+        </div>
+    </div>
+
+    <div class="hidden question-answers">
+        <div class="question-inner">
+        <p>What is the result of <code>false || (true &amp;&amp; !true)</code>?</p>
+<ul>
+<li><input name='quiz-row-11-0' type='checkbox' checked/> <code>false</code></li>
+<li><input name='quiz-row-11-0' type='checkbox'/> <code>true</code></li>
+</ul>
+
+        </div>
+    </div>
+</div>
+
+
+<div class="btn-group btn-group-justified">
+    <a href="#" class="btn btn-default action-submit">Submit</a>
+    <a href="#" class="btn btn-default action-solution">Solution</a>
+    
+    <a href="https://github.com/NeilMadden/IntroToSoftwareEngineering/issues/new" target="_blank" class="btn btn-default">Have a Question?</a>
+    
+</div>
+
+                    
+                    </section>
+                
+                    <section class="normal" id="section-gitbook_11">
+                    
+                        <h3 id="operator-precedence">Operator precedence</h3>
+<p>In the examples so far we have used parentheses (round brackets) to surround sub-expressions. For example, in the last
+question above we wrote <code>false || (true &amp;&amp; !true)</code>. We could also have written it without the parentheses, as just
+<code>false || true &amp;&amp; !true</code>. The reason that these two are equivalent is that Javascript (and most programming languages)
+use a concept called <em>operator precedence</em> to decide what order to evaluate sub-expressions when we don&#39;t use explicit
+parentheses. For Boolean expressions, the order of precedence is that <code>!</code> has the highest precedence, followed by <code>&amp;&amp;</code>
+and then by <code>||</code>. So an expression like <code>false || true &amp;&amp; !true</code> will be treated as <code>false || (true &amp;&amp; (!true))</code>,
+while <code>true &amp;&amp; !false || true</code> becomes <code>(true &amp;&amp; (!false)) || true</code>. Notice how the <code>!</code> expressions are always in the
+inner-most set of parentheses, indicating that they will be evaluated first, followed by any <code>&amp;&amp;</code> conditions, and
+finally, any <code>||</code> conditions. These rules are usually what you expect. However, if you are in any doubt then you can
+always add extra parentheses to make the order clear. Later, we will see that operator precedence applies to other
+operators in Javascript, such as arithmetic. In most cases, the precedence follows standard mathematical practice.</p>
+<p>It is important to be aware that spacing of operators and other visual clues that humans use to decide on precedence
+mean nothing to the Javascript language. For example, the expressions <code>a &amp;&amp; b||c</code> and <code>a&amp;&amp;b || c</code> are identical -- they
+both mean the same as <code>(a &amp;&amp; b) || c</code>.</p>
+
+                    
+                    </section>
+                
+                    <section class="quiz" id="section-gitbook_12">
+                    
+                        <div class="header">
+    <h2>Quiz</h2>
+</div>
+
+<div class="message">
+    <p>Using the rules for operator precedence, how are the following expressions interpreted in Javascript?</p>
+
+</div>
+
+
+
+<div class="question">
+    <div class="question-header">Question 1 of 2</div>
+
+    <div class="question-content">
+        <div class="alert alert-success hidden">
+            <b>Correct!</b>
+        </div>
+
+        <div class="alert alert-danger error-message hidden">
+            <p><b>Not quite!</b></p>
+            <p>Remember that AND (<code>&amp;&amp;</code>) has higher precedence than OR.</p>
+
+        </div>
+
+        <div class="question-inner">
+        <p><code>a &amp;&amp; b || c</code></p>
+<ul>
+<li><input name='quiz-row-15-0' type='checkbox'/> <code>(a &amp;&amp; b) || c</code></li>
+<li><input name='quiz-row-15-0' type='checkbox'/> <code>a &amp;&amp; (b || c)</code></li>
+</ul>
+
+        </div>
+    </div>
+
+    <div class="hidden question-answers">
+        <div class="question-inner">
+        <p><code>a &amp;&amp; b || c</code></p>
+<ul>
+<li><input name='quiz-row-16-0' type='checkbox' checked/> <code>(a &amp;&amp; b) || c</code></li>
+<li><input name='quiz-row-16-0' type='checkbox'/> <code>a &amp;&amp; (b || c)</code></li>
+</ul>
+
+        </div>
+    </div>
+</div>
+
+<div class="question">
+    <div class="question-header">Question 2 of 2</div>
+
+    <div class="question-content">
+        <div class="alert alert-success hidden">
+            <b>Correct!</b>
+        </div>
+
+        <div class="alert alert-danger error-message hidden">
+            <p><b>Not quite!</b></p>
+            <p><code>!a</code> and <code>b &amp;&amp; c</code> both have higher precedence than the <code>||</code> operator so will be evaluated first. As they occur in
+different sub-expressions we do not need any further parentheses.</p>
+
+        </div>
+
+        <div class="question-inner">
+        <p><code>!a || b &amp;&amp; c</code></p>
+<ul>
+<li><input name='quiz-row-18-0' type='checkbox'/> <code>!(a || (b &amp;&amp; c))</code></li>
+<li><input name='quiz-row-18-0' type='checkbox'/> <code>(!a) || (b &amp;&amp; c)</code></li>
+<li><input name='quiz-row-18-0' type='checkbox'/> <code>((!a) || b) &amp;&amp; c)</code></li>
+</ul>
+
+        </div>
+    </div>
+
+    <div class="hidden question-answers">
+        <div class="question-inner">
+        <p><code>!a || b &amp;&amp; c</code></p>
+<ul>
+<li><input name='quiz-row-19-0' type='checkbox'/> <code>!(a || (b &amp;&amp; c))</code></li>
+<li><input name='quiz-row-19-0' type='checkbox' checked/> <code>(!a) || (b &amp;&amp; c)</code></li>
+<li><input name='quiz-row-19-0' type='checkbox'/> <code>((!a) || b) &amp;&amp; c)</code></li>
+</ul>
+
+        </div>
+    </div>
+</div>
+
+
+<div class="btn-group btn-group-justified">
+    <a href="#" class="btn btn-default action-submit">Submit</a>
+    <a href="#" class="btn btn-default action-solution">Solution</a>
+    
+    <a href="https://github.com/NeilMadden/IntroToSoftwareEngineering/issues/new" target="_blank" class="btn btn-default">Have a Question?</a>
+    
+</div>
+
+                    
+                    </section>
+                
+                    <section class="normal" id="section-gitbook_13">
+                    
+                        <h3 id="other-boolean-operators">Other Boolean operators</h3>
+<p>Note that <code>A || B</code> is true even if <em>both</em> A and B are true. This is known as inclusive-or, and is what is meant by &#39;or&#39;
 in programming. In everyday language, &#39;or&#39; often means &#39;either one or the other (but not both)&#39;. In programming, this
-concept is known as <em>exclusive or</em> or <em>XOR</em>. There is no built-in operator for XOR in JavaScript, but you can build it
+concept is known as <em>exclusive or</em> or <em>XOR</em>. There is no built-in operator for XOR in Javascript, but you can build it
 from the other operators.</p>
-<p>Exercise: Write out the truth table for XOR. What combination of operators can be used to implement it?</p>
+<p><em>Exercise:</em> Write out the truth table for XOR. What combination of operators can be used to implement it?</p>
 <p>There are a handful of other operators that are commonly used in logic, but less common in programming. Implication,
-written <code>A =&gt; B</code> (in logic, but not JavaScript) means that B must be true whenever A is true. (When A is not true, B
+written <code>A =&gt; B</code> (in logic, but not Javascript) means that B must be true whenever A is true. (When A is not true, B
 can be either true or false). It is equivalent to the expression <code>!A || B</code> - either A is not true or B must be true.</p>
 <p>A final operator (again, present in logic but not in most programming languages) is logical equivalence, written
 <code>A &lt;=&gt; B</code>. This says that A is true if and only if B is true. It is equivalent to two implications: <code>A =&gt; B &amp;&amp; B =&gt; A</code>.
 You might recognise that this is the exact opposite of the XOR operator.</p>
+<p><em>Exercise:</em> Write out the truth tables for <code>=&gt;</code> and <code>&lt;=&gt;</code>.</p>
 <p>All of these operators together form the entirety of Boolean logic (also known as propositional logic). We won&#39;t go
 much more into the formal definitions of logic here as there are plenty of good introductions available on the web.
 However, an interesting point is that we can define all of the operators in terms of just NOT and either AND or OR.
 For instance, OR itself can be defined as <code>!(!A &amp;&amp; !B)</code>. If we take this a little further then we can come up with the
 combined operators NAND and NOR: NAND is formed by applying NOT to the result of an AND, while NOR is formed by doing
 the same to OR. We can then pick either of these two operators and implement the whole of the rest of Boolean logic
-from that one building block. This is useful when designing microchips as an entire processor can be built from a single
-simple building block.</p>
-<h3 id="booleans-in-programming">Booleans in Programming</h3>
-<p>Boolean values are extremely widely used in programming to allow <em>conditional</em> code that executes when some Boolean
-condition is true. The basis for this is the <em>if-then-else</em> statement</p>
+from that one building block. Microprocessor design often uses this trick as a NAND or NOR operation is easy to
+implement using just a handful of transistors, and then the rest of the processor can be built using this one simple
+building block. For example, NOT(a) can be implemented simply as NAND(a, a). OR(a, b) can then be implemented as
+NAND(NOT(a), NOT(b)). And so on.</p>
+<p><em>Exercise:</em> Write out the truth tables for NAND and NOR. Pick one and implement all of the other operators using it.</p>
+<p>In the next chapter we will see how we can build numbers and other data types from simple Boolean operations.</p>
 
                     
                     </section>
