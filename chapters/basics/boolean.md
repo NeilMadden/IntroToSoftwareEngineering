@@ -48,6 +48,24 @@ operators in a combined truth table:
 | `true`  | `false` | `false` | `true`  |
 | `true`  | `true`  | `true`  | `true`  |
 
+----
+
+Given the truth tables above, what would you expect the result of the following Boolean expressions to be?
+
+`true && false`
+- [X] `false`
+- [ ] `true`
+
+> The `&&` (AND) operator requires both arguments to be true.
+
+`true && !false`
+- [ ] `false`
+- [X] `true`
+
+> `!false` is equal to `true` so both arguments are true.
+
+----
+
 ### Other operators
 
 Note that `A || B` is true even if *both* A and B are true. This is known as inclusive-or, as is what is meant by 'or'

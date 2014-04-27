@@ -1,12 +1,12 @@
 # Introduction
 
-This book provides a guide to professional software engineering. It is intended as a guide for complete beginners with
-little to no programming experience. It presents a lightning tour of all of the basics that you need to know in order
-to start a career in this field, whether you are fresh out of school or considering a career change. It is not meant as
-a comprehensive guide, as that would fill several books. Instead, it is a fairly terse introduction to everything you
-need to know to be able to fill in the gaps on your own. It is also not an easy course. We will cover a wide range of
-topics at a fair pace. There are a lot of good tutorials available on the web that cover this material at a more
-relaxed pace if you need to spend more time on any topic.
+This book provides a guide to professional software engineering. It is intended as a first course for complete beginners
+with little to no programming experience. It presents a lightning tour of all of the basics that you need to know in
+order to start a career in this field, whether you are fresh out of school or considering a career change. It is not
+meant as a comprehensive guide, as that would fill several books. Instead, it is a fairly terse introduction to
+everything you need to know to be able to fill in the gaps on your own. It is also not an easy course. We will cover a
+wide range of topics at a fair pace. There are a lot of good tutorials available on the web that cover this material at
+a more relaxed pace if you need to spend more time on any topic.
 
 ## Topics Covered
 
