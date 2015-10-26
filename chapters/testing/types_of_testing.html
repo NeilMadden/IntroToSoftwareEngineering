@@ -1,711 +1,1100 @@
 <!DOCTYPE HTML>
-<html lang="en-US">
-    <head prefix="og: http://ogp.me/ns# book: http://ogp.me/ns/book#">
+<html lang="en-US" >
+    
+    <head>
         
         <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=11; IE=10; IE=9; IE=8; IE=7; IE=EDGE" />
         <title>Types of Tests | Introduction to Software Engineering</title>
-
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <meta name="robots" content="index, follow">
-        <meta name="author" content="NeilMadden">
-        <meta name="description" content="A short course on professional software engineering for beginners.">
-        <meta name="keywords" content="gitbook,github" >
-        <meta name="generator" content="www.gitbook.io">
-
-        
-        <link rel="next" href="../../chapters/testing/unit_testing.html" />
-        
-        
-        <link rel="prev" href="../../chapters/testing/intro.html" />
-        
-
-        <meta property="og:title" content="Types of Tests | Introduction to Software Engineering">
-        <meta property="og:site_name" content="Introduction to Software Engineering">
-        <meta property="og:type" content="book">
-        <meta property="og:locale" content="en_US">
-
-        <meta property="book:author" content="https://github.com/NeilMadden">
-        <meta property="book:tag" content="GitBook">
-
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 1.5.0">
+        <meta name="HandheldFriendly" content="true"/>
         <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
         <meta name="apple-mobile-web-app-capable" content="yes">
         <meta name="apple-mobile-web-app-status-bar-style" content="black">
-
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
         <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+        
+        
+    
+    
+    <link rel="next" href="../../chapters/testing/unit_testing.html" />
+    
+    
+    <link rel="prev" href="../../chapters/testing/intro.html" />
+    
+
         
     </head>
     <body>
         
-        <link rel="stylesheet" href="../../gitbook/style.css">
         
+<link rel="stylesheet" href="../../gitbook/style.css">
+
+
         
-    <div class="book" data-github="NeilMadden/IntroToSoftwareEngineering" data-level="4.1" data-basepath="../.." data-revision="1398611945748">
-    <div class="book-header">
-    <!-- Actions Left -->
-    
-    <a href="https://github.com/NeilMadden/IntroToSoftwareEngineering" target="_blank" class="btn pull-left"><i class="fa fa-github-alt"></i></a>
-    
-    <a href="#" class="btn pull-left toggle-summary"><i class="fa fa-align-justify"></i></a>
-    <a href="#" class="btn pull-left toggle-search"><i class="fa fa-search"></i></a>
-
-    <!-- Actions Right -->
-    <a href="#" target="_blank" class="btn pull-right" data-sharing="google-plus"><i class="fa fa-google-plus"></i></a>
-    <a href="#" target="_blank" class="btn pull-right" data-sharing="facebook"><i class="fa fa-facebook"></i></a>
-    <a href="#" target="_blank" class="btn pull-right" data-sharing="twitter"><i class="fa fa-twitter"></i></a>
-
-    
-    <a href="https://github.com/NeilMadden/IntroToSoftwareEngineering/stargazers" target="_blank" class="btn pull-right count-star"><i class="fa fa-star-o"></i> Star (<span>-</span>)</a>
-    <a href="https://github.com/NeilMadden/IntroToSoftwareEngineering/watchers" target="_blank" class="btn pull-right count-watch"><i class="fa fa-eye"></i> Watch (<span>-</span>)</a>
+    <div class="book" data-level="4.1" data-basepath="../.." data-revision="1445892213255">
     
 
-    <!-- Title -->
-    <h1><a href="../../" >Introduction to Software Engineering</a></h1>
-</div>
-
-    <div class="book-summary">
+<div class="book-summary">
     <div class="book-search">
-        <input type="text" placeholder="Search" class="form-control" />
+        <input type="text" placeholder="Type to search" class="form-control" />
     </div>
     <ul class="summary">
         
-        <li>
-            <a href="https://github.com/NeilMadden" target="blank">About the author</a>
+    	
+    	
+    	
+
+        
+
+        
+    
+        
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../../index.html">
+                        <i class="fa fa-check"></i>
+                        
+                         Introduction
+                    </a>
+                
+            
+            
         </li>
-        <li>
-            <a href="https://github.com/NeilMadden/IntroToSoftwareEngineering/issues" target="blank">Questions and Issues</a>
+    
+        
+        <li class="chapter " data-level="1" data-path="chapters/What_is_Software_Engineering.html">
+            
+                
+                    <a href="../../chapters/What_is_Software_Engineering.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                         What is Software Engineering?
+                    </a>
+                
+            
+            
         </li>
-        <li>
-            <a href="https://github.com/NeilMadden/IntroToSoftwareEngineering/edit/master/chapters/testing/types_of_testing.md" target="blank">Edit and Contribute</a>
+    
+        
+        <li class="chapter " data-level="2" data-path="chapters/basics/intro.html">
+            
+                
+                    <a href="../../chapters/basics/intro.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                         Fundamentals
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="2.1" data-path="chapters/basics/boolean.html">
+            
+                
+                    <a href="../../chapters/basics/boolean.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.</b>
+                        
+                         Boolean Logic
+                    </a>
+                
+            
+            
         </li>
+    
+        
+        <li class="chapter " data-level="2.2" data-path="chapters/basics/numbers.html">
+            
+                
+                    <a href="../../chapters/basics/numbers.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.</b>
+                        
+                         Numbers and Arithmetic
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2.3" data-path="chapters/basics/functions.html">
+            
+                
+                    <a href="../../chapters/basics/functions.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.3.</b>
+                        
+                         Variables and Functions
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2.4" data-path="chapters/basics/control.html">
+            
+                
+                    <a href="../../chapters/basics/control.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.4.</b>
+                        
+                         Control Structures
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2.5" data-path="chapters/basics/text.html">
+            
+                
+                    <a href="../../chapters/basics/text.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.5.</b>
+                        
+                         Text and Strings
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2.6" data-path="chapters/basics/data.html">
+            
+                
+                    <a href="../../chapters/basics/data.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.6.</b>
+                        
+                         Data Structures
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2.7" data-path="chapters/basics/oo.html">
+            
+                
+                    <a href="../../chapters/basics/oo.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.7.</b>
+                        
+                         Object-Oriented Programming
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3" data-path="chapters/web/intro.html">
+            
+                
+                    <a href="../../chapters/web/intro.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                         Web Programming
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="3.1" data-path="chapters/web/html.html">
+            
+                
+                    <a href="../../chapters/web/html.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.</b>
+                        
+                         HTML: The HyperText Markup Language
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3.2" data-path="chapters/web/css.html">
+            
+                
+                    <a href="../../chapters/web/css.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.2.</b>
+                        
+                         CSS: Cascading Style Sheets
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3.3" data-path="chapters/web/server.html">
+            
+                
+                    <a href="../../chapters/web/server.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.3.</b>
+                        
+                         Web Servers and HTTP
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4" data-path="chapters/testing/intro.html">
+            
+                
+                    <a href="../../chapters/testing/intro.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                         Testing
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter active" data-level="4.1" data-path="chapters/testing/types_of_testing.html">
+            
+                
+                    <a href="../../chapters/testing/types_of_testing.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.1.</b>
+                        
+                         Types of Tests
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4.2" data-path="chapters/testing/unit_testing.html">
+            
+                
+                    <a href="../../chapters/testing/unit_testing.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.2.</b>
+                        
+                         Unit Testing
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4.3" data-path="chapters/testing/mocks.html">
+            
+                
+                    <a href="../../chapters/testing/mocks.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.3.</b>
+                        
+                         Mocks and Stubs
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4.4" data-path="chapters/testing/effective.html">
+            
+                
+                    <a href="../../chapters/testing/effective.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.4.</b>
+                        
+                         Effective Testing
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4.5" data-path="chapters/testing/formal.html">
+            
+                
+                    <a href="../../chapters/testing/formal.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.5.</b>
+                        
+                         Formal Methods
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5" data-path="chapters/design/intro.html">
+            
+                
+                    <a href="../../chapters/design/intro.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.</b>
+                        
+                         Software Design
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="5.1" data-path="chapters/design/principles.html">
+            
+                
+                    <a href="../../chapters/design/principles.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.1.</b>
+                        
+                         Design Principles
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5.2" data-path="chapters/design/patterns.html">
+            
+                
+                    <a href="../../chapters/design/patterns.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.2.</b>
+                        
+                         Design Patterns
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5.3" data-path="chapters/design/requirements.html">
+            
+                
+                    <a href="../../chapters/design/requirements.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.3.</b>
+                        
+                         Designing for Requirements
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="6" data-path="chapters/architecture/intro.html">
+            
+                
+                    <a href="../../chapters/architecture/intro.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.</b>
+                        
+                         Software Architecture
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="6.1" data-path="chapters/architecture/nonfunc.html">
+            
+                
+                    <a href="../../chapters/architecture/nonfunc.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.1.</b>
+                        
+                         Non-Functional Requirements
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="6.2" data-path="chapters/architecture/bigpicture.html">
+            
+                
+                    <a href="../../chapters/architecture/bigpicture.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.2.</b>
+                        
+                         The Big Picture
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="6.3" data-path="chapters/architecture/common.html">
+            
+                
+                    <a href="../../chapters/architecture/common.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.3.</b>
+                        
+                         Common Architectures
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="7" data-path="chapters/domain/intro.html">
+            
+                
+                    <a href="../../chapters/domain/intro.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.</b>
+                        
+                         Domain Modelling
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="7.1" data-path="chapters/domain/logic.html">
+            
+                
+                    <a href="../../chapters/domain/logic.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.1.</b>
+                        
+                         A Little Bit of Logic
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="7.2" data-path="chapters/domain/modelling.html">
+            
+                
+                    <a href="../../chapters/domain/modelling.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.2.</b>
+                        
+                         Modelling a Domain
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="8" data-path="chapters/db/intro.html">
+            
+                
+                    <a href="../../chapters/db/intro.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.</b>
+                        
+                         Databases
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="8.1" data-path="chapters/db/logic.html">
+            
+                
+                    <a href="../../chapters/db/logic.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.1.</b>
+                        
+                         Logic Programming
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="8.2" data-path="chapters/db/relational.html">
+            
+                
+                    <a href="../../chapters/db/relational.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.2.</b>
+                        
+                         Relational Databases
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="8.3" data-path="chapters/db/sql.html">
+            
+                
+                    <a href="../../chapters/db/sql.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.3.</b>
+                        
+                         SQL
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="8.4" data-path="chapters/db/modelling.html">
+            
+                
+                    <a href="../../chapters/db/modelling.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.4.</b>
+                        
+                         Domain Models to Schema
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="8.5" data-path="chapters/db/nonrelational.html">
+            
+                
+                    <a href="../../chapters/db/nonrelational.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.5.</b>
+                        
+                         Non-Relational Database Models
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="9" data-path="chapters/functional/intro.html">
+            
+                
+                    <a href="../../chapters/functional/intro.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.</b>
+                        
+                         Functional Programming
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="10" data-path="chapters/concurrency/intro.html">
+            
+                
+                    <a href="../../chapters/concurrency/intro.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.</b>
+                        
+                         Concurrency
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="11" data-path="chapters/security/intro.html">
+            
+                
+                    <a href="../../chapters/security/intro.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>11.</b>
+                        
+                         Security
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="11.1" data-path="chapters/security/access.html">
+            
+                
+                    <a href="../../chapters/security/access.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>11.1.</b>
+                        
+                         Access Control
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="11.2" data-path="chapters/security/auth.html">
+            
+                
+                    <a href="../../chapters/security/auth.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>11.2.</b>
+                        
+                         Authentication and Authorisation
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="11.3" data-path="chapters/security/audit.html">
+            
+                
+                    <a href="../../chapters/security/audit.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>11.3.</b>
+                        
+                         Auditing
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="11.4" data-path="chapters/security/crypto.html">
+            
+                
+                    <a href="../../chapters/security/crypto.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>11.4.</b>
+                        
+                         Cryptography
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="12" data-path="chapters/maintenance/intro.html">
+            
+                
+                    <a href="../../chapters/maintenance/intro.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>12.</b>
+                        
+                         Deployment and Maintenance
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="12.1" data-path="chapters/maintenance/deployment.html">
+            
+                
+                    <a href="../../chapters/maintenance/deployment.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>12.1.</b>
+                        
+                         Deployment
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="12.2" data-path="chapters/maintenance/debugging.html">
+            
+                
+                    <a href="../../chapters/maintenance/debugging.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>12.2.</b>
+                        
+                         Debugging
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="12.3" data-path="chapters/maintenance/refactoring.html">
+            
+                
+                    <a href="../../chapters/maintenance/refactoring.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>12.3.</b>
+                        
+                         Refactoring
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="12.4" data-path="chapters/maintenance/profiling.html">
+            
+                
+                    <a href="../../chapters/maintenance/profiling.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>12.4.</b>
+                        
+                         Profiling and Optimisation
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="12.5" data-path="chapters/maintenance/large_systems.html">
+            
+                
+                    <a href="../../chapters/maintenance/large_systems.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>12.5.</b>
+                        
+                         Navigating Large Codebases
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="13" data-path="chapters/compsci/intro.html">
+            
+                
+                    <a href="../../chapters/compsci/intro.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>13.</b>
+                        
+                         Computer Science
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="13.1" data-path="chapters/compsci/automata.html">
+            
+                
+                    <a href="../../chapters/compsci/automata.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>13.1.</b>
+                        
+                         Languages and Machines
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="13.2" data-path="chapters/compsci/sets.html">
+            
+                
+                    <a href="../../chapters/compsci/sets.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>13.2.</b>
+                        
+                         Sets and Graphs
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="13.3" data-path="chapters/compsci/algorithms.html">
+            
+                
+                    <a href="../../chapters/compsci/algorithms.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>13.3.</b>
+                        
+                         Algorithm Analysis
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+
+        
         <li class="divider"></li>
-        
-        <li data-level="0" data-path="index.html">
-            <a href="../../"><i class="fa fa-check"></i> Introduction</a>
+        <li>
+            <a href="http://www.gitbook.io/" target="blank" class="gitbook-link">Published using GitBook</a>
         </li>
-        
-            <li  data-level="1" data-path="chapters/What_is_Software_Engineering.html">
-                
-                <a href="../../chapters/What_is_Software_Engineering.html">
-                    <i class="fa fa-check"></i> <b>1.</b> What is Software Engineering?
-                </a>
-                
-                
-            </li>
-        
-            <li  data-level="2" data-path="chapters/basics/intro.html">
-                
-                <a href="../../chapters/basics/intro.html">
-                    <i class="fa fa-check"></i> <b>2.</b> Fundamentals
-                </a>
-                
-                
-                <ul class="articles">
-                    
-                        <li  data-level="2.1" data-path="chapters/basics/boolean.html">
-                            
-                            <a href="../../chapters/basics/boolean.html">
-                                <i class="fa fa-check"></i> <b>2.1.</b> Boolean Logic
-                            </a>
-                            
-                        </li>
-                    
-                        <li  data-level="2.2" data-path="chapters/basics/numbers.html">
-                            
-                            <a href="../../chapters/basics/numbers.html">
-                                <i class="fa fa-check"></i> <b>2.2.</b> Numbers and Arithmetic
-                            </a>
-                            
-                        </li>
-                    
-                        <li  data-level="2.3" data-path="chapters/basics/functions.html">
-                            
-                            <a href="../../chapters/basics/functions.html">
-                                <i class="fa fa-check"></i> <b>2.3.</b> Variables and Functions
-                            </a>
-                            
-                        </li>
-                    
-                        <li  data-level="2.4" data-path="chapters/basics/control.html">
-                            
-                            <a href="../../chapters/basics/control.html">
-                                <i class="fa fa-check"></i> <b>2.4.</b> Control Structures
-                            </a>
-                            
-                        </li>
-                    
-                        <li  data-level="2.5" data-path="chapters/basics/text.html">
-                            
-                            <a href="../../chapters/basics/text.html">
-                                <i class="fa fa-check"></i> <b>2.5.</b> Text and Strings
-                            </a>
-                            
-                        </li>
-                    
-                        <li  data-level="2.6" data-path="chapters/basics/data.html">
-                            
-                            <a href="../../chapters/basics/data.html">
-                                <i class="fa fa-check"></i> <b>2.6.</b> Data Structures
-                            </a>
-                            
-                        </li>
-                    
-                        <li  data-level="2.7" data-path="chapters/basics/oo.html">
-                            
-                            <a href="../../chapters/basics/oo.html">
-                                <i class="fa fa-check"></i> <b>2.7.</b> Object-Oriented Programming
-                            </a>
-                            
-                        </li>
-                    
-                </ul>
-                
-            </li>
-        
-            <li  data-level="3" data-path="chapters/web/intro.html">
-                
-                <a href="../../chapters/web/intro.html">
-                    <i class="fa fa-check"></i> <b>3.</b> Web Programming
-                </a>
-                
-                
-                <ul class="articles">
-                    
-                        <li  data-level="3.1" data-path="chapters/web/html.html">
-                            
-                            <a href="../../chapters/web/html.html">
-                                <i class="fa fa-check"></i> <b>3.1.</b> HTML: The HyperText Markup Language
-                            </a>
-                            
-                        </li>
-                    
-                        <li  data-level="3.2" data-path="chapters/web/css.html">
-                            
-                            <a href="../../chapters/web/css.html">
-                                <i class="fa fa-check"></i> <b>3.2.</b> CSS: Cascading Style Sheets
-                            </a>
-                            
-                        </li>
-                    
-                        <li  data-level="3.3" data-path="chapters/web/server.html">
-                            
-                            <a href="../../chapters/web/server.html">
-                                <i class="fa fa-check"></i> <b>3.3.</b> Web Servers and HTTP
-                            </a>
-                            
-                        </li>
-                    
-                </ul>
-                
-            </li>
-        
-            <li  data-level="4" data-path="chapters/testing/intro.html">
-                
-                <a href="../../chapters/testing/intro.html">
-                    <i class="fa fa-check"></i> <b>4.</b> Testing
-                </a>
-                
-                
-                <ul class="articles">
-                    
-                        <li  data-level="4.1" data-path="chapters/testing/types_of_testing.html">
-                            
-                            <a href="../../chapters/testing/types_of_testing.html">
-                                <i class="fa fa-check"></i> <b>4.1.</b> Types of Tests
-                            </a>
-                            
-                        </li>
-                    
-                        <li  data-level="4.2" data-path="chapters/testing/unit_testing.html">
-                            
-                            <a href="../../chapters/testing/unit_testing.html">
-                                <i class="fa fa-check"></i> <b>4.2.</b> Unit Testing
-                            </a>
-                            
-                        </li>
-                    
-                        <li  data-level="4.3" data-path="chapters/testing/mocks.html">
-                            
-                            <a href="../../chapters/testing/mocks.html">
-                                <i class="fa fa-check"></i> <b>4.3.</b> Mocks and Stubs
-                            </a>
-                            
-                        </li>
-                    
-                        <li  data-level="4.4" data-path="chapters/testing/effective.html">
-                            
-                            <a href="../../chapters/testing/effective.html">
-                                <i class="fa fa-check"></i> <b>4.4.</b> Effective Testing
-                            </a>
-                            
-                        </li>
-                    
-                        <li  data-level="4.5" data-path="chapters/testing/formal.html">
-                            
-                            <a href="../../chapters/testing/formal.html">
-                                <i class="fa fa-check"></i> <b>4.5.</b> Formal Methods
-                            </a>
-                            
-                        </li>
-                    
-                </ul>
-                
-            </li>
-        
-            <li  data-level="5" data-path="chapters/design/intro.html">
-                
-                <a href="../../chapters/design/intro.html">
-                    <i class="fa fa-check"></i> <b>5.</b> Software Design
-                </a>
-                
-                
-                <ul class="articles">
-                    
-                        <li  data-level="5.1" data-path="chapters/design/principles.html">
-                            
-                            <a href="../../chapters/design/principles.html">
-                                <i class="fa fa-check"></i> <b>5.1.</b> Design Principles
-                            </a>
-                            
-                        </li>
-                    
-                        <li  data-level="5.2" data-path="chapters/design/patterns.html">
-                            
-                            <a href="../../chapters/design/patterns.html">
-                                <i class="fa fa-check"></i> <b>5.2.</b> Design Patterns
-                            </a>
-                            
-                        </li>
-                    
-                        <li  data-level="5.3" data-path="chapters/design/requirements.html">
-                            
-                            <a href="../../chapters/design/requirements.html">
-                                <i class="fa fa-check"></i> <b>5.3.</b> Designing for Requirements
-                            </a>
-                            
-                        </li>
-                    
-                </ul>
-                
-            </li>
-        
-            <li  data-level="6" data-path="chapters/architecture/intro.html">
-                
-                <a href="../../chapters/architecture/intro.html">
-                    <i class="fa fa-check"></i> <b>6.</b> Software Architecture
-                </a>
-                
-                
-                <ul class="articles">
-                    
-                        <li  data-level="6.1" data-path="chapters/architecture/nonfunc.html">
-                            
-                            <a href="../../chapters/architecture/nonfunc.html">
-                                <i class="fa fa-check"></i> <b>6.1.</b> Non-Functional Requirements
-                            </a>
-                            
-                        </li>
-                    
-                        <li  data-level="6.2" data-path="chapters/architecture/bigpicture.html">
-                            
-                            <a href="../../chapters/architecture/bigpicture.html">
-                                <i class="fa fa-check"></i> <b>6.2.</b> The Big Picture
-                            </a>
-                            
-                        </li>
-                    
-                        <li  data-level="6.3" data-path="chapters/architecture/common.html">
-                            
-                            <a href="../../chapters/architecture/common.html">
-                                <i class="fa fa-check"></i> <b>6.3.</b> Common Architectures
-                            </a>
-                            
-                        </li>
-                    
-                </ul>
-                
-            </li>
-        
-            <li  data-level="7" data-path="chapters/domain/intro.html">
-                
-                <a href="../../chapters/domain/intro.html">
-                    <i class="fa fa-check"></i> <b>7.</b> Domain Modelling
-                </a>
-                
-                
-                <ul class="articles">
-                    
-                        <li  data-level="7.1" data-path="chapters/domain/logic.html">
-                            
-                            <a href="../../chapters/domain/logic.html">
-                                <i class="fa fa-check"></i> <b>7.1.</b> A Little Bit of Logic
-                            </a>
-                            
-                        </li>
-                    
-                        <li  data-level="7.2" data-path="chapters/domain/modelling.html">
-                            
-                            <a href="../../chapters/domain/modelling.html">
-                                <i class="fa fa-check"></i> <b>7.2.</b> Modelling a Domain
-                            </a>
-                            
-                        </li>
-                    
-                </ul>
-                
-            </li>
-        
-            <li  data-level="8" data-path="chapters/db/intro.html">
-                
-                <a href="../../chapters/db/intro.html">
-                    <i class="fa fa-check"></i> <b>8.</b> Databases
-                </a>
-                
-                
-                <ul class="articles">
-                    
-                        <li  data-level="8.1" data-path="chapters/db/logic.html">
-                            
-                            <a href="../../chapters/db/logic.html">
-                                <i class="fa fa-check"></i> <b>8.1.</b> Logic Programming
-                            </a>
-                            
-                        </li>
-                    
-                        <li  data-level="8.2" data-path="chapters/db/relational.html">
-                            
-                            <a href="../../chapters/db/relational.html">
-                                <i class="fa fa-check"></i> <b>8.2.</b> Relational Databases
-                            </a>
-                            
-                        </li>
-                    
-                        <li  data-level="8.3" data-path="chapters/db/sql.html">
-                            
-                            <a href="../../chapters/db/sql.html">
-                                <i class="fa fa-check"></i> <b>8.3.</b> SQL
-                            </a>
-                            
-                        </li>
-                    
-                        <li  data-level="8.4" data-path="chapters/db/modelling.html">
-                            
-                            <a href="../../chapters/db/modelling.html">
-                                <i class="fa fa-check"></i> <b>8.4.</b> Domain Models to Schema
-                            </a>
-                            
-                        </li>
-                    
-                        <li  data-level="8.5" data-path="chapters/db/nonrelational.html">
-                            
-                            <a href="../../chapters/db/nonrelational.html">
-                                <i class="fa fa-check"></i> <b>8.5.</b> Non-Relational Database Models
-                            </a>
-                            
-                        </li>
-                    
-                </ul>
-                
-            </li>
-        
-            <li  data-level="9" data-path="chapters/functional/intro.html">
-                
-                <a href="../../chapters/functional/intro.html">
-                    <i class="fa fa-check"></i> <b>9.</b> Functional Programming
-                </a>
-                
-                
-            </li>
-        
-            <li  data-level="10" data-path="chapters/concurrency/intro.html">
-                
-                <a href="../../chapters/concurrency/intro.html">
-                    <i class="fa fa-check"></i> <b>10.</b> Concurrency
-                </a>
-                
-                
-            </li>
-        
-            <li  data-level="11" data-path="chapters/security/intro.html">
-                
-                <a href="../../chapters/security/intro.html">
-                    <i class="fa fa-check"></i> <b>11.</b> Security
-                </a>
-                
-                
-                <ul class="articles">
-                    
-                        <li  data-level="11.1" data-path="chapters/security/access.html">
-                            
-                            <a href="../../chapters/security/access.html">
-                                <i class="fa fa-check"></i> <b>11.1.</b> Access Control
-                            </a>
-                            
-                        </li>
-                    
-                        <li  data-level="11.2" data-path="chapters/security/auth.html">
-                            
-                            <a href="../../chapters/security/auth.html">
-                                <i class="fa fa-check"></i> <b>11.2.</b> Authentication and Authorisation
-                            </a>
-                            
-                        </li>
-                    
-                        <li  data-level="11.3" data-path="chapters/security/audit.html">
-                            
-                            <a href="../../chapters/security/audit.html">
-                                <i class="fa fa-check"></i> <b>11.3.</b> Auditing
-                            </a>
-                            
-                        </li>
-                    
-                        <li  data-level="11.4" data-path="chapters/security/crypto.html">
-                            
-                            <a href="../../chapters/security/crypto.html">
-                                <i class="fa fa-check"></i> <b>11.4.</b> Cryptography
-                            </a>
-                            
-                        </li>
-                    
-                </ul>
-                
-            </li>
-        
-            <li  data-level="12" data-path="chapters/maintenance/intro.html">
-                
-                <a href="../../chapters/maintenance/intro.html">
-                    <i class="fa fa-check"></i> <b>12.</b> Deployment and Maintenance
-                </a>
-                
-                
-                <ul class="articles">
-                    
-                        <li  data-level="12.1" data-path="chapters/maintenance/deployment.html">
-                            
-                            <a href="../../chapters/maintenance/deployment.html">
-                                <i class="fa fa-check"></i> <b>12.1.</b> Deployment
-                            </a>
-                            
-                        </li>
-                    
-                        <li  data-level="12.2" data-path="chapters/maintenance/debugging.html">
-                            
-                            <a href="../../chapters/maintenance/debugging.html">
-                                <i class="fa fa-check"></i> <b>12.2.</b> Debugging
-                            </a>
-                            
-                        </li>
-                    
-                        <li  data-level="12.3" data-path="chapters/maintenance/refactoring.html">
-                            
-                            <a href="../../chapters/maintenance/refactoring.html">
-                                <i class="fa fa-check"></i> <b>12.3.</b> Refactoring
-                            </a>
-                            
-                        </li>
-                    
-                        <li  data-level="12.4" data-path="chapters/maintenance/profiling.html">
-                            
-                            <a href="../../chapters/maintenance/profiling.html">
-                                <i class="fa fa-check"></i> <b>12.4.</b> Profiling and Optimisation
-                            </a>
-                            
-                        </li>
-                    
-                        <li  data-level="12.5" data-path="chapters/maintenance/large_systems.html">
-                            
-                            <a href="../../chapters/maintenance/large_systems.html">
-                                <i class="fa fa-check"></i> <b>12.5.</b> Navigating Large Codebases
-                            </a>
-                            
-                        </li>
-                    
-                </ul>
-                
-            </li>
-        
-            <li  data-level="13" data-path="chapters/compsci/intro.html">
-                
-                <a href="../../chapters/compsci/intro.html">
-                    <i class="fa fa-check"></i> <b>13.</b> Computer Science
-                </a>
-                
-                
-                <ul class="articles">
-                    
-                        <li  data-level="13.1" data-path="chapters/compsci/automata.html">
-                            
-                            <a href="../../chapters/compsci/automata.html">
-                                <i class="fa fa-check"></i> <b>13.1.</b> Languages and Machines
-                            </a>
-                            
-                        </li>
-                    
-                        <li  data-level="13.2" data-path="chapters/compsci/sets.html">
-                            
-                            <a href="../../chapters/compsci/sets.html">
-                                <i class="fa fa-check"></i> <b>13.2.</b> Sets and Graphs
-                            </a>
-                            
-                        </li>
-                    
-                        <li  data-level="13.3" data-path="chapters/compsci/algorithms.html">
-                            
-                            <a href="../../chapters/compsci/algorithms.html">
-                                <i class="fa fa-check"></i> <b>13.3.</b> Algorithm Analysis
-                            </a>
-                            
-                        </li>
-                    
-                </ul>
-                
-            </li>
         
     </ul>
 </div>
 
     <div class="book-body">
         <div class="body-inner">
-            <div class="page-wrapper" tabindex="-1">
-                <div class="book-progress">
-    <div class="bar">
-        <div class="inner" style="width: 58.490566037735846%;min-width: 56.60377358490566%;"></div>
+            <div class="book-header">
+    <!-- Actions Left -->
+    <a href="#" class="btn pull-left toggle-summary" aria-label="Toggle summary"><i class="fa fa-align-justify"></i></a>
+    <a href="#" class="btn pull-left toggle-search" aria-label="Toggle search"><i class="fa fa-search"></i></a>
+    
+    <div id="font-settings-wrapper" class="dropdown pull-left">
+        <a href="#" class="btn toggle-dropdown" aria-label="Toggle font settings"><i class="fa fa-font"></i>
+        </a>
+        <div class="dropdown-menu font-settings">
+    <div class="dropdown-caret">
+        <span class="caret-outer"></span>
+        <span class="caret-inner"></span>
     </div>
-    <div class="chapters">
-    
-        <a href="../../index.html" title="Introduction" class="chapter done new-chapter" data-progress="0" style="left: 0%;"></a>
-    
-        <a href="../../chapters/What_is_Software_Engineering.html" title="What is Software Engineering?" class="chapter done new-chapter" data-progress="1" style="left: 1.8867924528301887%;"></a>
-    
-        <a href="../../chapters/concurrency/intro.html" title="Concurrency" class="chapter done " data-progress="10" style="left: 3.7735849056603774%;"></a>
-    
-        <a href="../../chapters/security/intro.html" title="Security" class="chapter done " data-progress="11" style="left: 5.660377358490566%;"></a>
-    
-        <a href="../../chapters/security/access.html" title="Access Control" class="chapter done " data-progress="11.1" style="left: 7.547169811320755%;"></a>
-    
-        <a href="../../chapters/security/auth.html" title="Authentication and Authorisation" class="chapter done " data-progress="11.2" style="left: 9.433962264150944%;"></a>
-    
-        <a href="../../chapters/security/audit.html" title="Auditing" class="chapter done " data-progress="11.3" style="left: 11.320754716981131%;"></a>
-    
-        <a href="../../chapters/security/crypto.html" title="Cryptography" class="chapter done " data-progress="11.4" style="left: 13.20754716981132%;"></a>
-    
-        <a href="../../chapters/maintenance/intro.html" title="Deployment and Maintenance" class="chapter done " data-progress="12" style="left: 15.09433962264151%;"></a>
-    
-        <a href="../../chapters/maintenance/deployment.html" title="Deployment" class="chapter done " data-progress="12.1" style="left: 16.9811320754717%;"></a>
-    
-        <a href="../../chapters/maintenance/debugging.html" title="Debugging" class="chapter done " data-progress="12.2" style="left: 18.867924528301888%;"></a>
-    
-        <a href="../../chapters/maintenance/refactoring.html" title="Refactoring" class="chapter done " data-progress="12.3" style="left: 20.754716981132077%;"></a>
-    
-        <a href="../../chapters/maintenance/profiling.html" title="Profiling and Optimisation" class="chapter done " data-progress="12.4" style="left: 22.641509433962263%;"></a>
-    
-        <a href="../../chapters/maintenance/large_systems.html" title="Navigating Large Codebases" class="chapter done " data-progress="12.5" style="left: 24.528301886792452%;"></a>
-    
-        <a href="../../chapters/compsci/intro.html" title="Computer Science" class="chapter done " data-progress="13" style="left: 26.41509433962264%;"></a>
-    
-        <a href="../../chapters/compsci/automata.html" title="Languages and Machines" class="chapter done " data-progress="13.1" style="left: 28.30188679245283%;"></a>
-    
-        <a href="../../chapters/compsci/sets.html" title="Sets and Graphs" class="chapter done " data-progress="13.2" style="left: 30.18867924528302%;"></a>
-    
-        <a href="../../chapters/compsci/algorithms.html" title="Algorithm Analysis" class="chapter done " data-progress="13.3" style="left: 32.075471698113205%;"></a>
-    
-        <a href="../../chapters/basics/intro.html" title="Fundamentals" class="chapter done new-chapter" data-progress="2" style="left: 33.9622641509434%;"></a>
-    
-        <a href="../../chapters/basics/boolean.html" title="Boolean Logic" class="chapter done " data-progress="2.1" style="left: 35.84905660377358%;"></a>
-    
-        <a href="../../chapters/basics/numbers.html" title="Numbers and Arithmetic" class="chapter done " data-progress="2.2" style="left: 37.735849056603776%;"></a>
-    
-        <a href="../../chapters/basics/functions.html" title="Variables and Functions" class="chapter done " data-progress="2.3" style="left: 39.62264150943396%;"></a>
-    
-        <a href="../../chapters/basics/control.html" title="Control Structures" class="chapter done " data-progress="2.4" style="left: 41.509433962264154%;"></a>
-    
-        <a href="../../chapters/basics/text.html" title="Text and Strings" class="chapter done " data-progress="2.5" style="left: 43.39622641509434%;"></a>
-    
-        <a href="../../chapters/basics/data.html" title="Data Structures" class="chapter done " data-progress="2.6" style="left: 45.283018867924525%;"></a>
-    
-        <a href="../../chapters/basics/oo.html" title="Object-Oriented Programming" class="chapter done " data-progress="2.7" style="left: 47.16981132075472%;"></a>
-    
-        <a href="../../chapters/web/intro.html" title="Web Programming" class="chapter done new-chapter" data-progress="3" style="left: 49.056603773584904%;"></a>
-    
-        <a href="../../chapters/web/html.html" title="HTML: The HyperText Markup Language" class="chapter done " data-progress="3.1" style="left: 50.943396226415096%;"></a>
-    
-        <a href="../../chapters/web/css.html" title="CSS: Cascading Style Sheets" class="chapter done " data-progress="3.2" style="left: 52.83018867924528%;"></a>
-    
-        <a href="../../chapters/web/server.html" title="Web Servers and HTTP" class="chapter done " data-progress="3.3" style="left: 54.716981132075475%;"></a>
-    
-        <a href="../../chapters/testing/intro.html" title="Testing" class="chapter done new-chapter" data-progress="4" style="left: 56.60377358490566%;"></a>
-    
-        <a href="../../chapters/testing/types_of_testing.html" title="Types of Tests" class="chapter done " data-progress="4.1" style="left: 58.490566037735846%;"></a>
-    
-        <a href="../../chapters/testing/unit_testing.html" title="Unit Testing" class="chapter  " data-progress="4.2" style="left: 60.37735849056604%;"></a>
-    
-        <a href="../../chapters/testing/mocks.html" title="Mocks and Stubs" class="chapter  " data-progress="4.3" style="left: 62.264150943396224%;"></a>
-    
-        <a href="../../chapters/testing/effective.html" title="Effective Testing" class="chapter  " data-progress="4.4" style="left: 64.15094339622641%;"></a>
-    
-        <a href="../../chapters/testing/formal.html" title="Formal Methods" class="chapter  " data-progress="4.5" style="left: 66.0377358490566%;"></a>
-    
-        <a href="../../chapters/design/intro.html" title="Software Design" class="chapter  new-chapter" data-progress="5" style="left: 67.9245283018868%;"></a>
-    
-        <a href="../../chapters/design/principles.html" title="Design Principles" class="chapter  " data-progress="5.1" style="left: 69.81132075471699%;"></a>
-    
-        <a href="../../chapters/design/patterns.html" title="Design Patterns" class="chapter  " data-progress="5.2" style="left: 71.69811320754717%;"></a>
-    
-        <a href="../../chapters/design/requirements.html" title="Designing for Requirements" class="chapter  " data-progress="5.3" style="left: 73.58490566037736%;"></a>
-    
-        <a href="../../chapters/architecture/intro.html" title="Software Architecture" class="chapter  new-chapter" data-progress="6" style="left: 75.47169811320755%;"></a>
-    
-        <a href="../../chapters/architecture/nonfunc.html" title="Non-Functional Requirements" class="chapter  " data-progress="6.1" style="left: 77.35849056603773%;"></a>
-    
-        <a href="../../chapters/architecture/bigpicture.html" title="The Big Picture" class="chapter  " data-progress="6.2" style="left: 79.24528301886792%;"></a>
-    
-        <a href="../../chapters/architecture/common.html" title="Common Architectures" class="chapter  " data-progress="6.3" style="left: 81.13207547169812%;"></a>
-    
-        <a href="../../chapters/domain/intro.html" title="Domain Modelling" class="chapter  new-chapter" data-progress="7" style="left: 83.01886792452831%;"></a>
-    
-        <a href="../../chapters/domain/logic.html" title="A Little Bit of Logic" class="chapter  " data-progress="7.1" style="left: 84.90566037735849%;"></a>
-    
-        <a href="../../chapters/domain/modelling.html" title="Modelling a Domain" class="chapter  " data-progress="7.2" style="left: 86.79245283018868%;"></a>
-    
-        <a href="../../chapters/db/intro.html" title="Databases" class="chapter  new-chapter" data-progress="8" style="left: 88.67924528301887%;"></a>
-    
-        <a href="../../chapters/db/logic.html" title="Logic Programming" class="chapter  " data-progress="8.1" style="left: 90.56603773584905%;"></a>
-    
-        <a href="../../chapters/db/relational.html" title="Relational Databases" class="chapter  " data-progress="8.2" style="left: 92.45283018867924%;"></a>
-    
-        <a href="../../chapters/db/sql.html" title="SQL" class="chapter  " data-progress="8.3" style="left: 94.33962264150944%;"></a>
-    
-        <a href="../../chapters/db/modelling.html" title="Domain Models to Schema" class="chapter  " data-progress="8.4" style="left: 96.22641509433963%;"></a>
-    
-        <a href="../../chapters/db/nonrelational.html" title="Non-Relational Database Models" class="chapter  " data-progress="8.5" style="left: 98.11320754716981%;"></a>
-    
-        <a href="../../chapters/functional/intro.html" title="Functional Programming" class="chapter  new-chapter" data-progress="9" style="left: 100%;"></a>
-    
+
+    <div class="buttons">
+        <button type="button" id="reduce-font-size" class="button size-2">A</button>
+        <button type="button" id="enlarge-font-size" class="button size-2">A</button>
+    </div>
+
+    <div class="buttons font-family-list">
+        <button type="button" data-font="0" class="button">Serif</button>
+        <button type="button" data-font="1" class="button">Sans</button>
+    </div>
+
+    <div class="buttons color-theme-list">
+        <button type="button" id="color-theme-preview-0" class="button size-3" data-theme="0">White</button>
+        <button type="button" id="color-theme-preview-1" class="button size-3" data-theme="1">Sepia</button>
+        <button type="button" id="color-theme-preview-2" class="button size-3" data-theme="2">Night</button>
     </div>
 </div>
 
+    </div>
+
+    <!-- Actions Right -->
+    
+    <div class="dropdown pull-right">
+        <a href="#" class="btn toggle-dropdown" aria-label="Toggle share dropdown"><i class="fa fa-share-alt"></i>
+        </a>
+        <div class="dropdown-menu font-settings dropdown-left">
+            <div class="dropdown-caret">
+                <span class="caret-outer"></span>
+                <span class="caret-inner"></span>
+            </div>
+            <div class="buttons">
+                <button type="button" data-sharing="twitter" class="button">Twitter</button>
+                <button type="button" data-sharing="google-plus" class="button">Google</button>
+                <button type="button" data-sharing="facebook" class="button">Facebook</button>
+                <button type="button" data-sharing="weibo" class="button">Weibo</button>
+                <button type="button" data-sharing="instapaper" class="button">Instapaper</button>
+            </div>
+        </div>
+    </div>
+    
+
+    
+    <a href="#" target="_blank" class="btn pull-right google-plus-sharing-link sharing-link" data-sharing="google-plus" aria-label="Share on Google Plus"><i class="fa fa-google-plus"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right facebook-sharing-link sharing-link" data-sharing="facebook" aria-label="Share on Facebook"><i class="fa fa-facebook"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right twitter-sharing-link sharing-link" data-sharing="twitter" aria-label="Share on Twitter"><i class="fa fa-twitter"></i></a>
+    
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../../" >Introduction to Software Engineering</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1">
                 <div class="page-inner">
+                
+                
                 
                 </div>
             </div>
         </div>
 
         
-        <a href="../../chapters/testing/intro.html" class="navigation navigation-prev"><i class="fa fa-angle-left"></i></a>
+        <a href="../../chapters/testing/intro.html" class="navigation navigation-prev " aria-label="Previous page: Testing"><i class="fa fa-angle-left"></i></a>
         
         
-        <a href="../../chapters/testing/unit_testing.html" class="navigation navigation-next"><i class="fa fa-angle-right"></i></a>
+        <a href="../../chapters/testing/unit_testing.html" class="navigation navigation-next " aria-label="Next page: Unit Testing"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>
 
         
-        <script type="text/javascript">(function(e,b){if(!b.__SV){var a,f,i,g;window.mixpanel=b;b._i=[];b.init=function(a,e,d){function f(b,h){var a=h.split(".");2==a.length&&(b=b[a[0]],h=a[1]);b[h]=function(){b.push([h].concat(Array.prototype.slice.call(arguments,0)))}}var c=b;"undefined"!==typeof d?c=b[d]=[]:d="mixpanel";c.people=c.people||[];c.toString=function(b){var a="mixpanel";"mixpanel"!==d&&(a+="."+d);b||(a+=" (stub)");return a};c.people.toString=function(){return c.toString(1)+".people (stub)"};i="disable track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config people.set people.set_once people.increment people.append people.track_charge people.clear_charges people.delete_user".split(" ");
-for(g=0;g<i.length;g++)f(c,i[g]);b._i.push([a,e,d])};b.__SV=1.2;a=e.createElement("script");a.type="text/javascript";a.async=!0;a.src=("https:"===e.location.protocol?"https:":"http:")+'//cdn.mxpnl.com/libs/mixpanel-2.2.min.js';f=e.getElementsByTagName("script")[0];f.parentNode.insertBefore(a,f)}})(document,window.mixpanel||[]);
-        </script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.1.3/ace.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.1.3/mode-javascript.js"></script>
-        <script src="../../gitbook/jsrepl/jsrepl.js" id="jsrepl-script"></script>
-        <script src="../../gitbook/app.js"></script>
+<script src="../../gitbook/app.js"></script>
+
+    
+    <script src="https://cdn.mathjax.org/mathjax/2.4-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+
+    
+    <script src="../../gitbook/plugins/gitbook-plugin-mathjax/plugin.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"fontSettings":{"theme":null,"family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
         
     </body>
+    
 </html>
